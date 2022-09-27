@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CSS Floats and Flexbox</title>
+        <style>
+            .clearfix {
+                clear: both;
+            }
+            div {
+                width: 300px;
+                height: 300px;
+                background: orange;
+                border: 2px solid green;
+            }
+
+            .container {
+                display: flex;
+            }
+
+            section div:nth-child(2) {
+                background: tan;
+                border-color: maroon;
+                order: 1;
+            }
+
+            section div:nth-child(3) {
+                order: 3;
+            }
+
+            section > div:first-child {
+                order: 2;
+                background: red;
+                border-color: teal;
+            }
+
+            @media screen and (max-width: 600px) {
+                section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div>Hi there</div>
+            <div>Wassup</div>
+            <div>Yoo</div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CSS Selectors</title>
+        <style>
+            #coolP {
+                color: red;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+
+            table {
+                border: 1px solid black;
+            }
+
+            table td {
+                border: 1px solid black;
+            }
+
+            table tr:nth-child(2n) {
+                background: gray;
+            }
+
+            h1 ~ p {
+                transform: rotate(10deg);
+            }
+
+            .outer {
+                width: 400px;
+                height: 400px;
+                background: green;
+            }
+
+            .inner {
+                width: 200px;
+                height: 200px;
+                background: orange;
+            }
+
+            section > aside {
+                width: 300px;
+                height: 00px;
+                background: maroon;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <div>
+                <section class="outer">
+                    <aside>
+                        <section class="inner">
+                            <div>
+                                <aside>here's some content</aside>
+                            </div>
+                        </section>
+                    </aside>
+                </section>
+                <table>
+                    <tbody>
+                        <thead>
+                            <tr>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>

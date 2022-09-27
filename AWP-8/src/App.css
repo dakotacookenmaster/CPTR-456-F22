@@ -1,0 +1,36 @@
+.block {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+}
+
+.container {
+  background: tan;
+}
+
+.videoCard {
+  border: 2px solid white;
+  padding: 10px;
+  background: #2A2A2A;
+  border-radius: 10px;
+}
+
+.videoContainer, .dataContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.dataContainer p {
+  margin: 0;
+  padding: 0;
+}
+
+.avatar {
+  border-radius: 100%;
+  background: white;
+  color: #2A2A2A;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}

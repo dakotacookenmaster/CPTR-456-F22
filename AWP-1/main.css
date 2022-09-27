@@ -1,0 +1,10 @@
+@media (max-width: 720px) {
+    h1 {
+        color: green;
+    }
+}
+
+img {
+    width: 500px;
+    max-width: 100%;
+}

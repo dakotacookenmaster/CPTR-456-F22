@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CSS Grid Practice</title>
+        <style>
+            /* CSS Reset */
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Page Styles */
+            .container {
+                display: grid;
+                grid-template-rows: 0.2fr 0.8fr 0.5fr 0.2fr;
+                grid-template-columns: 0.6fr 0.4fr 0.4fr 0.4fr;
+                grid-template-areas: 
+                    "nav nav nav nav"
+                    "sidebar main main main"
+                    "sidebar content1 content2 content3"
+                    "footer footer footer footer";
+                height: 100vh;
+                grid-gap: 0.5rem;
+            }
+
+            .container > * {
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #nav {
+                background: orange;
+                grid-area: nav;
+            }
+
+            #main {
+                background: teal;
+                grid-area: main;
+            }
+
+            #sidebar {
+                background: maroon;
+                grid-area: sidebar;
+            }
+
+            #content1 {
+                background: brown;
+                grid-area: content1;
+            }
+
+            #content2 {
+                background: green;
+                grid-area: content2;
+            }
+
+            #content3 {
+                background: yellow;
+                grid-area: content3;
+            }
+
+            #footer {
+                background: pink;
+                grid-area: footer;
+            }
+
+            @media screen and (max-width: 550px) {
+                .container {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 0.4fr 0.4fr 1.1fr 0.7fr 0.7fr 0.7fr 0.4fr;
+                    grid-template-areas:
+                        "nav"
+                        "sidebar"
+                        "main"
+                        "content1"
+                        "content2"
+                        "content3"
+                        "footer"
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav id="nav">Navigation</nav>
+            <main id="main">Main Content</main>
+            <aside id="sidebar">Sidebar</aside>
+            <section id="content1">Content 1</section>
+            <section id="content2">Content 2</section>
+            <section id="content3">Content 3</section>
+            <footer id="footer">Footer</footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CSS Navigation Bar</title>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                gap: 10px;
+                display: flex;
+            }
+
+            nav + p:hover {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%;
+                background: maroon;
+            }
+
+            nav li {
+                color: white;
+            }
+
+            .right {
+                margin-left: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li class="right">Contact</li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

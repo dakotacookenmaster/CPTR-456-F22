@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "picture": "https://images6.fanpop.com/image/photos/32500000/Dog-dogs-32509010-3888-2592.jpg",
+        "name": "Furry McFurster",
+        "time": "12:15AM",
+        "date": "Wed Aug 5, 2019",
+        "avatar": "DC"
+    },
+    {
+        "id": 1,
+        "picture": "https://images6.fanpop.com/image/photos/43100000/cute-puppy-dogs-43117552-564-564.jpg",
+        "name": "Rocko",
+        "time": "12:00PM",
+        "date": "Tue Sep 6, 2022",
+        "avatar": "AG"
+    },
+    {
+        "id": 2,
+        "picture": "https://images6.fanpop.com/image/photos/43100000/cute-dog-dogs-43117551-736-736.jpg",
+        "name": "Fluffy",
+        "time": "1:59AM",
+        "date": "Thu Jul 4, 1998",
+        "avatar": "ME"
+    }
+]
