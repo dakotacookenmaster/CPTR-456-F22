@@ -5,7 +5,7 @@ const Transaction = (props) => {
         <div className="card">
             <div className="card-body">
                 <p>{ description }</p>
-                <h1>{ `$${amount.toFixed(2)}`}</h1>
+                <h1>{ `$${Number(amount).toFixed(2)}`}</h1>
                 {
                     type === "withdrawal" ? (
                         <i className="bi bi-dash-circle-fill"></i>
