@@ -1,0 +1,26 @@
+.nav {
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.add-transaction {
+  font-size: 2em;
+}
+
+.add-transaction:hover {
+  cursor: pointer;
+  color: #96DA58;
+}
+
+.transaction-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-transaction-form {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}

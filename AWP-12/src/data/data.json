@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "amount": 30,
+        "description": "Groceries",
+        "type": "withdrawal",
+        "isPending": true
+    },
+    {
+        "id": 1,
+        "amount": 1100,
+        "description": "Pool?",
+        "type": "deposit",
+        "isPending": false
+    },
+    {
+        "id": 2,
+        "amount": 100.51,
+        "description": "Too expensive TV from Walmart",
+        "type": "deposit",
+        "isPending": true
+    }
+]
