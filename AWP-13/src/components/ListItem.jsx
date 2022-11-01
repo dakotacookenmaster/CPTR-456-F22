@@ -3,9 +3,31 @@ import CheckIcon from '@mui/icons-material/Check'
 import RemoveIcon from '@mui/icons-material/Remove'
 
 const ListItem = (props) => {
-    const { name, isCompleted } = props
+    const { name, isCompleted, setItems, id } = props
+
+    const handleToggleComplete = () => {
+        setItems(prevItems => {
+            return prevItems.map(i => {
+                if (i.id === id) {
+                    return {
+                        ...i,
+                        isCompleted: !i.isCompleted,
+                    }
+                }
+
+                return i
+            })
+        })
+    }
+
+    const handleRemove = () => {
+        setItems(prevItems => {
+            return prevItems.filter(i => i.id !== id)
+        })
+    }
+
     return (
-        <Paper 
+        <Paper
             elevation={3}
             style={{ display: "flex", alignItems: "center", padding: "10px" }}
         >
@@ -15,12 +37,12 @@ const ListItem = (props) => {
                 {name}
             </Typography>
             <div style={{ marginLeft: "auto" }}>
-            <IconButton>
-                <CheckIcon />
-            </IconButton>
-            <IconButton>
-                <RemoveIcon />
-            </IconButton>
+                <IconButton onClick={handleToggleComplete}>
+                    <CheckIcon />
+                </IconButton>
+                <IconButton onClick={handleRemove}>
+                    <RemoveIcon />
+                </IconButton>
             </div>
         </Paper>
     )
