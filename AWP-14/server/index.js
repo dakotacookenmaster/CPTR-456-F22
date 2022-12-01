@@ -13,6 +13,22 @@ let items = [
     "Meg",
 ]
 
+let randomNumber = 0
+let goingUp = true
+
+setInterval(() => {
+  if(randomNumber < 100 && goingUp) {
+    randomNumber++
+  } else if(randomNumber === 100) {
+    goingUp = false
+    randomNumber--
+  } else if(randomNumber > 0 && !goingUp) {
+    randomNumber--
+  } else {
+    goingUp = true
+  }
+}, 100)
+
 app.get('/', (req, res) => {
   res.json({
     people: items
@@ -45,6 +61,13 @@ app.delete("/", (request, response) => {
   })
 })
 
+
+app.get("/number", (request, response) => {
+  response.json({
+    // randomNumber: randomNumber
+    randomNumber
+  })
+})
 
 
 app.listen(port, () => {
