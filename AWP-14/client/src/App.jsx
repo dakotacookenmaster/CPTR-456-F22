@@ -51,7 +51,7 @@ function App() {
 
   useEffect(() => {
     fetchData()
-    const intervalId = setInterval(fetchNum, 300)
+    const intervalId = setInterval(fetchNum, 1000)
 
     return () => {
       clearInterval(intervalId)
@@ -67,7 +67,7 @@ function App() {
       data: {
         labels: randomNumbers.map((number, index) => index),
         datasets: [{
-          label: '# of Votes',
+          label: 'Random Numbers',
           data: randomNumbers,
           borderWidth: 1
         }]
